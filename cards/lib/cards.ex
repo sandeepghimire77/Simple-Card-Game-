@@ -36,6 +36,14 @@ def  load(filename) do
 
 
 end
+# Pipe operator use to assemble all methods in one for cool use 
+def  create_hand(hand_size) do
+  Cards.create_deck
+   |> Cards.shuffle
+   |> Cards.deal(hand_size)
+
+end
+
 
 
 
