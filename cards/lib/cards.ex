@@ -1,4 +1,11 @@
 defmodule Cards do
+  @moduledoc """
+   Provides methods for creating and handling a deck of cards
+ """
+
+ @doc """
+   Returns a list of strings representing a deck of playing cards
+ """
 
   def create_deck do
     values = ["Ace", "Two", "Three", "Four", "Five"]
@@ -36,7 +43,7 @@ def  load(filename) do
 
 
 end
-# Pipe operator use to assemble all methods in one for cool use 
+# Pipe operator use to assemble all methods in one for cool use
 def  create_hand(hand_size) do
   Cards.create_deck
    |> Cards.shuffle
